@@ -6,7 +6,7 @@ Read Chapters 1 and 2 and you will learn what you need to be productive for indi
 You can also use this [interactive Git tutorial](https://try.github.io/levels/1/challenges/1). 
 Here is a useful [Git cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet/).
 
-##Configuration
+## Configuration
 Github has a new requirement that you use ssh keys, so you will need to [set that up first](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).  
 I recommend not using a password when you do the ssh-keygen.  So you should run the following commands in your terminal:
 ```
