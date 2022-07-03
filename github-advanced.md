@@ -63,6 +63,7 @@ The commands I use most often:
 - `git pull <remote> <branch>` : download commits from a remote repository and merge them
 - `git push <remote> <branch>` : upload commits to a remote repository
 - `git push --tags` : push tags to a remote repository
+
 In addition to these commands, it is useful to create a `.gitignore` file containing paths and file extensions you would like to ignore. For example, this might include backup copies created by your editor, configuration files that include important passwords, or (later in the course) node.js modules.
 
 ### Branching and Workflow (Advanced Material)
