@@ -28,24 +28,26 @@ cat ~/.ssh/id_ed25519.pub
 ```
 You should then copy the output of the "cat" command and log into your github account in your web browser and 
 
-In the upper-right corner of the github page, click your profile photo, then click Settings
-In the user settings sidebar, click SSH and GPG keys.
-Click New SSH key or Add SSH key.
-In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
-Paste your key into the "Key" field.
-Click Add SSH key.
+- In the upper-right corner of the github page, click your profile photo, then click Settings
+- In the user settings sidebar, click SSH and GPG keys.
+- Click New SSH key or Add SSH key.
+- In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+- Paste your key into the "Key" field.
+- Click Add SSH key.
 If "git push" asks for a username and password, you can run the following command to specify that you want to use your ssh key:
-
+```
 git remote set-url origin git@github.com:your_username/repo_name.git
+```
 I recommend doing some configuration for your name, email, and editor:
-
+```
 git config --global user.name "Daniel Zappala"
 git config --global user.email daniel.zappala@gmail.com
 git config --global core.editor <emacs or nano or vim>
+```
 The commands I use most often:
 
 Create Repositories
-git init : initialize a new repository
+`git init` : initialize a new repository
 git clone <url> : clone a repository
 Work With A Local Repository
 git log : view all previous commits
