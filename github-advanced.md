@@ -44,31 +44,32 @@ git config --global user.name "Daniel Zappala"
 git config --global user.email daniel.zappala@gmail.com
 git config --global core.editor <emacs or nano or vim>
 ```
+## Common Commands
 The commands I use most often:
 
-Create Repositories
-`git init` : initialize a new repository
-git clone <url> : clone a repository
-Work With A Local Repository
-git log : view all previous commits
-git log -p : view all previous commits with the diffs
-git status : list changed and new files
-git diff : view changes to files
-git add . : add all new files to a repository
-git commit -a : commit all changes to all files
-git tag <name> : mark current commit with a tag
-Update a Repository and Publish Changes
-git remote add <remote> <url>: add a remote repository
-git pull <remote> <branch> : download commits from a remote repository and merge them
-git push <remote> <branch> : upload commits to a remote repository
-git push --tags : push tags to a remote repository
-In addition to these commands, it is useful to create a .gitignore file containing paths and file extensions you would like to ignore. For example, this might include backup copies created by your editor, configuration files that include important passwords, or (later in the course) node.js modules.
+### Create Repositories
+- `git init` : initialize a new repository
+- `git clone <url>` : clone a repository
+### Work With A Local Repository
+- `git log` : view all previous commits
+- `git log -p` : view all previous commits with the diffs
+- `git status` : list changed and new files
+- `git diff` : view changes to files
+- `git add .` : add all new files to a repository
+- `git commit -a` : commit all changes to all files
+- `git tag <name>` : mark current commit with a tag
+### Update a Repository and Publish Changes
+- `git remote add <remote> <url>`: add a remote repository
+- `git pull <remote> <branch>` : download commits from a remote repository and merge them
+- `git push <remote> <branch>` : upload commits to a remote repository
+- `git push --tags` : push tags to a remote repository
+In addition to these commands, it is useful to create a `.gitignore` file containing paths and file extensions you would like to ignore. For example, this might include backup copies created by your editor, configuration files that include important passwords, or (later in the course) node.js modules.
 
-Branching and Workflow (Advanced Material)
-Once you start participating in shared projects, then Chapters 3 and 5 of Pro Git will help you with branching and workflow models. I also recommend this example workflow (Links to an external site.), which you can trim down for smaller projects. There are some good thoughts about workflows (Links to an external site.) by Atlassian.
+### Branching and Workflow (Advanced Material)
+Once you start participating in shared projects, then Chapters 3 and 5 of Pro Git will help you with branching and workflow models. I also recommend this [example workflow](http://nvie.com/posts/a-successful-git-branching-model/), which you can trim down for smaller projects. There are some good [thoughts about workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) by Atlassian.
 
 The commands I use most often:
 
-git branch : list all branches
-git checkout <branch> : check out an existing branch
-git checkout -b : create and check out a new branch
+- `git branch` : list all branches
+- `git checkout <branch>` : check out an existing branch
+- `git checkout -b` : create and check out a new branch
