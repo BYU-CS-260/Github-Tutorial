@@ -1,24 +1,31 @@
-Learning Git
-The best place to learn Git is to use the free Pro Git book (Links to an external site.). Read Chapters 1 and 2 and you will learn what you need to be productive for individual projects in this class.
+# Learning Git
 
-You can also use this interactive Git tutorial (Links to an external site.). Here is a useful Git cheatsheet (Links to an external site.).
+The best place to learn Git is to use the free [Pro Git book](http://git-scm.com/book). 
+Read Chapters 1 and 2 and you will learn what you need to be productive for individual projects in this class.
 
-Configuration
-Github has a new requirement that you use ssh keys, so you will need to set that up first (Links to an external site.).  I recommend not using a password when you do the ssh-keygen.  So you should run the following commands in your terminal:
+You can also use this [interactive Git tutorial](https://try.github.io/levels/1/challenges/1). 
+Here is a useful [Git cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet/).
 
+##Configuration
+Github has a new requirement that you use ssh keys, so you will need to [set that up first](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).  
+I recommend not using a password when you do the ssh-keygen.  So you should run the following commands in your terminal:
+```
 ssh-keygen -t ed25519 -C "youremail@youremailhost.com"
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config
+```
 Then edit ~/.ssh/config to contain the following
-
+```
 Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_ed25519
+```
 Then run the following commands
-
+```
 ssh-add  ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
+```
 You should then copy the output of the "cat" command and log into your github account in your web browser and 
 
 In the upper-right corner of the github page, click your profile photo, then click Settings
