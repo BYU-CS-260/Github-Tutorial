@@ -9,10 +9,9 @@ In this tutorial, we are going to show you the minimum subset of Github commands
 1. Create a GitHub account
 [Create an account](https://github.com/signup) on GitHub if you don't have one already.
 
-Step 2: (OPTIONAL) Configure an SSH key
-Using an SSH key will allow you to interact with your GitHub repositories without having to type your password regularly. If this interests you, go back and do the setup for SSH with your Digital Ocean server in the optional activity, then come back here.
+2. Set up a Personal Access Token for your Github account
+   - First Select your picture or identifier in the upper right corner of the github window
 
-You can use the official GitHub instructions (Links to an external site.), which has tabs for both OS X and Windows. Note, if you have setup your SSH key with your Digital Ocean machine, then all you should need to do is copy your public key to your GitHub account as described here (Links to an external site.).
 
 Step 3: Create a GitHub respoitory
 In your account, create a new repository called gitpractice.
