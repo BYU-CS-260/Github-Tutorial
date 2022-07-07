@@ -22,7 +22,7 @@ In this tutorial, we are going to show you the minimum subset of Github commands
 ![](images/githubtoken.png)    
 
 3. Create a new private git repo for the ["Weather App Lab"](https://byu.instructure.com/courses/15698/assignments/598439?module_item_id=1334017)
-![](images/githubclassroom.png)   
+![](images/githubclassroom.png) in Canvas
 
 The URL for the repo should look something like 
 ```
