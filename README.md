@@ -10,65 +10,55 @@ In this tutorial, we are going to show you the minimum subset of Github commands
 [Create an account](https://github.com/signup) on GitHub if you don't have one already.
 
 2. Set up a Personal Access Token for your Github account
-   - First Select your picture or identifier in the upper right corner of the github window
+   - First Select your picture or identifier in the upper right corner of the github window and select "Settings"
+![](images/githubsettings.png) 
+   - Scroll down to select "Developer Settings" in the bottom left of your settings page
+![](images/githubdevelopersettings.png) 
+   - Select "Personal Access Tokens" on the bottom left of this page
+![](images/githubpersonalaccess.png)    
+   - Select "Generate a new Token", create a Note to identify the token and specify "Repo" scope.
+![](images/githubnewtoken.png)   
+   - Select "Generate Token" and you will see the new Personal Access token in the middle of the screen.  Save it somewhere because you will be using it many times through the semester.  You will need it every time you access a github repo.  If you lose it, you can generate a new one so all is not lost, but you will find it better if you save it in a google doc or a note on your laptop.
+![](images/githubtoken.png)    
 
+3. Create a new private git repo for the ["Weather App Lab"](https://byu.instructure.com/courses/15698/assignments/598439?module_item_id=1334017)
+![](images/githubclassroom.png)   
 
-Step 3: Create a GitHub respoitory
-In your account, create a new repository called gitpractice.
-
-Step 4: Configure git
+The URL for the repo should look something like 
+```
+https://github.com/BYUCS260/weather-app-yourgithubid
+```
+4. Configure git in your Cloud9 instance
 If you haven't done this already, you should configure git with your name, email address, and preferred editor.
-
+```
 git config --global user.name "Daniel Zappala"
 git config --global user.email daniel.zappala@gmail.com
-git config --global core.editor emacs
-Be sure to substitute your own name, email address, and preferred editor. You might use vim or nano.
+```
+Be sure to substitute your own name and email address.
 
-Step 5: Create a directory with a test file
-On your local machine, create a new directory called git1:
+5. In your terminal pane on the bottom of the Cloud9 console, change directory to your public_html folder.
+```
+cd ~/environment/public_html
+```
 
-mkdir git1
-cd git1
-In this directory, use the editor of your choice to create a file called test.txt with the following lines:
+6. Clone the repository onto your Cloud9 instance using the URL from github classroom and your Personal access token. Replace "YourPersonalAccessToken" with the Personal Access Token you generated in github and replace "yourgitid" with your id.
+```
+git clone https://YourPersonalAccessToken@github.com/BYUCS260/weather-app-yourgitid
+```
+![](images/githubclone.png) 
 
-One
-two
-three
-Step 6: Initialize a git repository, commit your changes and push them to GitHub
-On your local machine, and inside the git1 directory, initialize a git repository and commit your changes
+7. Change the index.html in your cloned folder, save the change, and preview the changes
+![](images/change.png) 
 
-git init
-git add test.txt
-git commit -m "Added a file"
-Note: you can add all files and folders with changes with git add . (including the period)
-
-You now have a local git repository with this file committed. When you supply the "-m" flag, you put your commit message right on the command line. If you omit the "-m" flag, git will open the editor you configured and you can write the commit message in an editor. 
-
-Before you move on, run the git status command and you will see that you have one commit that has not been pushed to the remote repository on GitHub.
-
-Next, you will setup your repository so you can push your changes to your GItHub account. This is called a "remote" repository. You want to do this so that your files are all stored on GitHub, in case your laptop crashes.
-
-git remote add origin git@github.com:zappala/gitpractice
-git push -u origin master
-Be sure to subsitute your username above, and don't use mine. You can click on the "Clone or download" button in GitHub to get the full path name for your own repository.
-
-Important
-If you are using HTTPS (and NOT using SSH keys), then your GitHub links will look like this: https://github.com/zappala/gitpractice.git.
-
-If you are using SSH keys, then you github links will look like git@github.com:zappala/gitpractice.
-
-There is a small link in the Clone or Download dialog that lets you switch between these.
-
-Check that it works
-You should be able to view your repository on GitHub and see this file in the repository. If you run git status you will see that your local repository is in sync with the remote repository on GitHub.
-
-Step 7: Make additional changes
-Make some additional changes to test.txt. Then commit them. This time, we'll use "-a" to add the file to be committed and we'll leave off "-m" so that it will open an editor instead:
-
-git commit -a
-After you enter a commit message, then you can push your changes to the server:
-
+8. Now push the changes back to github
+```
+cd ~/environment/public_html/weather-app-yourgitid/
+git commit -a -m "Small Change"
 git push
-You should notice your changes on GitHub. You can also see all the changes on your local machine with:
+```
+![](images/push.png) 
 
-git log
+9. You should now be able to see the changes in your github browser window.
+![](images/smallchange.png) 
+
+Congratulations!  You will be saving all of your labs and creative projects in git for the rest of the class.  You will follow this same process for each assignment.
