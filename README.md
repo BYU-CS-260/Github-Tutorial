@@ -11,18 +11,21 @@ In this tutorial, we are going to show you the minimum subset of Github commands
 
 2. Set up a Personal Access Token for your Github account
    - First Select your picture or identifier in the upper right corner of the github window and select "Settings"
-![](images/githubsettings.png) 
+<img src="images/githubsettings.png" width="200" />
+
    - Scroll down to select "Developer Settings" in the bottom left of your settings page
-![](images/githubdevelopersettings.png) 
+<img src="images/githubdevelopersettings.png" width="250" />
+
    - Select "Personal Access Tokens" on the bottom left of this page
-![](images/githubpersonalaccess.png)    
+<img src="images/githubpersonalaccess.png" width="250" />
+
    - Select "Generate a new Token", create a Note to identify the token and specify "Repo" scope.
 ![](images/githubnewtoken.png)   
    - Select "Generate Token" and you will see the new Personal Access token in the middle of the screen.  Save it somewhere because you will be using it many times through the semester.  You will need it every time you access a github repo.  If you lose it, you can generate a new one so all is not lost, but you will find it better if you save it in a google doc or a note on your laptop.
 ![](images/githubtoken.png)    
 
 3. Create a new private git repo for the ["Weather App Lab"](https://byu.instructure.com/courses/15698/assignments/598439?module_item_id=1334017)
-![](images/githubclassroom.png) in Canvas
+<img src="images/githubclassroom.png" width="750" /> from Canvas.
 
 The URL for the repo should look something like 
 ```
@@ -59,6 +62,7 @@ git push
 ![](images/push.png) 
 
 9. You should now be able to see the changes in your github browser window.
-![](images/smallchange.png) 
+<img src="images/smallchange.png" width="600" />
+
 
 Congratulations!  You will be saving all of your labs and creative projects in git for the rest of the class.  You will follow this same process for each assignment.
