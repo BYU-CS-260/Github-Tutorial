@@ -46,6 +46,7 @@ git clone https://YourPersonalAccessToken@github.com/yourgitid/githubtest.git
 8. Now push the changes back to github
 ```
 cd ~/environment/public_html/githubtest/
+git add .
 git commit -a -m "New Index.html"
 git push
 ```
