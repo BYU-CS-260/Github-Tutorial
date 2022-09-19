@@ -13,9 +13,9 @@ that we will go over as the semester progresses.
 
 2. Create a new repository, call it "githubtest".  Add a Readme.md file and make it visible to the public so that the TAs can grade it.
 
-<img src="images/NewGitRepo.png" width-"750" />
+![](images/NewGitRepo.png)
 
-<img src="images/CreateRepo.png" width-"750" />
+![](images/CreateRepo.png)
 
 3. Go to the "Code" button for your new repository and copy the URL for the repository.
 <img src="images/Clone.png" width-"750" />
