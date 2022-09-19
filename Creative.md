@@ -14,11 +14,14 @@ that we will go over as the semester progresses.
 2. Create a new repository by selecting the "New" button.
 
 ![](images/NewGitRepo.png)
+
 3. Call it "githubtest".  Add a Readme.md file and make it visible to the public so that the TAs can grade it.
+
 ![](images/CreateRepo.png)
 
 4. Go to the "Code" button for your new repository and copy the URL for the repository.
-<img src="images/Clone.png" width-"750" />
+
+![](images/Clone.png)
 
 4. Configure git in your Cloud9 instance
 If you haven't done this already, you should configure git with your name, email address, and preferred editor.
