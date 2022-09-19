@@ -56,3 +56,8 @@ git push
 10. One of you should create the repository and then give permission to your partner to modify it.  
 Follow these [steps](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to give your partner permission.  
 
+11. Have your partner change the repository, then use the following command to get the modifications to your web server.
+```
+cd ~/environment/public_html/githubtest/
+git pull
+```
