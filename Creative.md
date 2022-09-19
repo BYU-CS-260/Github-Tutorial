@@ -23,7 +23,7 @@ that we will go over as the semester progresses.
 
 ![](images/Clone.png)
 
-4. Configure git in your Cloud9 instance
+5. Configure git in your Cloud9 instance
 If you haven't done this already, you should configure git with your name, email address, and preferred editor.
 ```
 git config --global user.name "Daniel Zappala"
@@ -31,7 +31,7 @@ git config --global user.email daniel.zappala@gmail.com
 ```
 Be sure to substitute your own name and email address.
 
-5. In your terminal pane on the bottom of the Cloud9 console, change directory to your public_html folder.
+6. In your terminal pane on the bottom of the Cloud9 console, change directory to your public_html folder.
 ```
 cd ~/environment/public_html
 ```
@@ -40,10 +40,8 @@ cd ~/environment/public_html
 ```
 git clone https://YourPersonalAccessToken@github.com/yourgitid/githubtest.git
 ```
-![](images/githubclone.png) 
 
 7. Create an index.html in your cloned folder, save the change, and preview the changes
-![](images/change.png) 
 
 8. Now push the changes back to github
 ```
@@ -51,11 +49,9 @@ cd ~/environment/public_html/githubtest/
 git commit -a -m "New Index.html"
 git push
 ```
-![](images/push.png) 
 
 9. You should now be able to see the changes in your github browser window.
-<img src="images/smallchange.png" width="600" />
 
-
-Congratulations!  You will be saving all of your labs and creative projects in git for the rest of the class.  You will follow this same process for each assignment.
+10. One of you should create the repository and then give permission to your partner to modify it.  
+Follow these [steps](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to give your partner permission.  
 
